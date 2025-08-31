@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Stopwatch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen">
+    <div class="bg-gray-800 p-6 sm:p-8 rounded-2xl shadow-2xl w-full max-w-md mx-4">
+        <h1 class="text-3xl sm:text-4xl font-bold text-center mb-6 text-cyan-400">Stopwatch</h1>
+        
+        <!-- Timer Display -->
+        <div class="text-5xl sm:text-7xl font-mono timer-display text-center mb-8 bg-gray-900 p-4 rounded-lg">
+            <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span><span class="text-3xl sm:text-4xl text-gray-500">.<span id="milliseconds">000</span></span>
+        </div>
+
+        <!-- Control Buttons -->
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <button id="start-pause" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-4 rounded-lg text-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-cyan-400">Start</button>
+            <button id="reset" class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 px-4 rounded-lg text-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-500" disabled>Reset</button>
+            <button id="lap" class="col-span-2 bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-4 rounded-lg text-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400" disabled>Lap</button>
+        </div>
+
+        <!-- Laps List -->
+        <div id="laps-container" class="bg-gray-900 rounded-lg p-4 max-h-60 overflow-y-auto">
+            <h2 class="text-xl font-semibold mb-2 text-gray-400 border-b border-gray-700 pb-2">Laps</h2>
+            <ul id="laps-list" class="space-y-2">
+                <!-- Lap times will be inserted here -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Link to your external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

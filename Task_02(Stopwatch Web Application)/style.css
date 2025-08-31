@@ -1,0 +1,10 @@
+/* Custom styles for the stopwatch */
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.timer-display {
+    font-variant-numeric: tabular-nums;
+}
