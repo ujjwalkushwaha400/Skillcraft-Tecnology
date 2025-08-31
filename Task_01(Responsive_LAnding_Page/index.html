@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Website</title>
+
+    <!-- Link to Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-indigo-600">Logo</a>
+                </div>
+                <div class="hidden md:block">
+                    <div id="nav-links" class="ml-10 flex items-baseline space-x-8">
+                        <a data-target="home" class="nav-link active">Home</a>
+                        <a data-target="about" class="nav-link">About</a>
+                        <div class="dropdown">
+                            <a class="nav-link inline-flex items-center">
+                                <span>Services</span>
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="#" data-target="services-web">Web Design</a>
+                                <a href="#" data-target="services-seo">SEO</a>
+                                <a href="#" data-target="services-marketing">Marketing</a>
+                            </div>
+                        </div>
+                        <a data-target="portfolio" class="nav-link">Portfolio</a>
+                        <a data-target="contact" class="nav-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <!-- Home Section -->
+            <div id="home" class="page-content active">
+                <div class="text-center">
+                    <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">Welcome to
+                        Our Website</h1>
+                    <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+                        This is the **Home** section. Click on other navigation links to see different content. Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Velit quasi unde ad cum reprehenderit a
+                        doloribus quaerat totam vero voluptatum?</p>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <div id="about" class="page-content">
+                <h2 class="text-3xl font-bold mb-4">About Us</h2>
+                <p class="text-lg text-gray-700">We are a team of passionate developers and designers dedicated to
+                    creating beautiful and functional websites. Our mission is to help businesses succeed online through
+                    innovative technology and creative solutions. Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Perspiciatis adipisci minus dolore magnam ut, debitis libero labore? Animi, facilis corporis?
+                    Quos ullam, ut laborum maiores quia quis expedita, exercitationem distinctio excepturi, laudantium
+                    nesciunt accusamus qui possimus! Ipsam, voluptatum dicta atque sequi dolore qui possimus ex nisi
+                    perspiciatis aperiam pariatur impedit dolor, laboriosam quisquam non maxime, doloremque doloribus
+                    incidunt magni numquam ducimus beatae hic provident. Iure ab, autem, vel aliquid atque ratione
+                    aperiam veniam eos nemo, illo provident? Voluptas deserunt praesentium eius esse nobis officia
+                    dicta. Ullam doloremque esse nesciunt iure distinctio. Impedit dolore et expedita veritatis totam.
+                    Tenetur, fugiat debitis.</p>
+            </div>
+
+            <!-- Portfolio Section -->
+            <div id="portfolio" class="page-content">
+                <h2 class="text-3xl font-bold mb-4">Our Portfolio</h2>
+                <p class="text-lg text-gray-700">Here you can see a showcase of our best work. We have worked with a
+                    variety of clients across different industries to deliver outstanding results. Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Repudiandae dignissimos earum, corrupti harum nobis ullam.
+                    Dolorum, dolorem velit qui modi repellendus rem, ad iusto blanditiis nostrum esse eaque veniam quod
+                    eius a non sunt adipisci in ab cumque fugit dolor. Aliquam ullam pariatur placeat iure ipsum velit
+                    eligendi omnis, explicabo quia sint dolor consequatur minus quibusdam sit. Velit illum placeat
+                    cumque, reprehenderit vitae soluta nihil hic. Exercitationem rerum officia sequi tempore! Iusto
+                    labore soluta exercitationem nobis enim minus possimus vitae dolore fuga! A neque error dicta ab
+                    dignissimos vitae soluta sint! Placeat, eius harum. Porro quia placeat iure ipsa reiciendis?
+                </p>
+            </div>
+
+            <!-- Contact Section -->
+            <div id="contact" class="page-content">
+                <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+                <p class="text-lg text-gray-700">Have a project in mind? We'd love to hear from you. Reach out to us
+                    through our contact form or email us directly at contact@example.com. Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. In aperiam reprehenderit modi itaque accusamus a sed tenetur quasi
+                    incidunt fugiat, voluptatibus quam culpa laboriosam beatae explicabo cumque error. Assumenda dolores
+                    tempora placeat nam, voluptatibus praesentium, molestias tenetur facilis enim, natus a! Pariatur
+                    consectetur numquam, a esse voluptas reprehenderit sunt dignissimos! Ab modi animi soluta laborum,
+                    ipsum ipsam accusamus doloribus voluptas! Exercitationem, reiciendis rerum quia natus nihil tempore
+                    nam pariatur minima magni neque qui eaque unde, quam eos porro possimus alias illo, iure et. Cumque
+                    ipsum debitis, commodi eveniet deleniti, sapiente exercitationem, ut dignissimos autem neque
+                    possimus qui temporibus magnam veniam.</p>
+            </div>
+
+            <!-- Service Sections -->
+            <div id="services-web" class="page-content">
+                <h2 class="text-3xl font-bold mb-4">Service: Web Design</h2>
+                <p class="text-lg text-gray-700">We create stunning, responsive, and user-friendly websites tailored to
+                    your brand's needs. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil delectus, quis,
+                    accusantium, dolore in nesciunt animi assumenda porro minima id eum nisi rerum commodi quod modi sit
+                    fuga voluptatem quos alias nobis aspernatur aut blanditiis totam! Dolore laborum nam laudantium
+                    magnam! Repellat sequi provident aliquam eveniet, debitis et pariatur alias?</p>
+            </div>
+            <div id="services-seo" class="page-content">
+                <h2 class="text-3xl font-bold mb-4">Service: SEO</h2>
+                <p class="text-lg text-gray-700">Our SEO strategies will help your website rank higher in search engine
+                    results, driving more organic traffic. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolores fugiat laudantium architecto ipsum facere dolore voluptatibus minima ab officia animi
+                    aliquam iusto, molestiae unde accusantium est illum adipisci natus.</p>
+            </div>
+            <div id="services-marketing" class="page-content">
+                <h2 class="text-3xl font-bold mb-4">Service: Marketing</h2>
+                <p class="text-lg text-gray-700">We offer comprehensive digital marketing services to help you grow your
+                    online presence and reach your target audience. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Fuga laudantium aperiam temporibus quod perferendis provident reprehenderit sequi voluptatem
+                    inventore quo ex molestias illo officia obcaecati sunt, recusandae expedita itaque, modi alias
+                    aspernatur mollitia nobis repellendus quidem? Quibusdam rem maiores tempora.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Link to your custom JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
