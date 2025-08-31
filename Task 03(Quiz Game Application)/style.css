@@ -1,0 +1,79 @@
+/* Custom styles for the Quiz */
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+.btn {
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+}
+
+/* Style for a correct answer button */
+.btn.correct {
+    background-color: #10B981 !important; /* Emerald-500 */
+    color: white;
+    border-color: #059669; /* Emerald-600 */
+}
+
+/* Style for an incorrect answer button */
+.btn.wrong {
+    background-color: #EF4444 !important; /* Red-500 */
+    color: white;
+    border-color: #DC2626; /* Red-600 */
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+/* New styles for checkbox answers */
+.checkbox-label {
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #374151; /* gray-700 */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 2px solid transparent;
+}
+
+.checkbox-label:hover {
+    background-color: #4B5563; /* gray-600 */
+}
+
+.checkbox-label input {
+    display: none; /* Hide the default checkbox */
+}
+
+/* Custom checkbox indicator */
+.checkbox-label span {
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.75rem;
+    border: 2px solid #9CA3AF; /* gray-400 */
+    border-radius: 0.25rem;
+    vertical-align: middle;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* Style for checked state */
+.checkbox-label input:checked + span {
+    background-color: #6366F1; /* indigo-500 */
+    border-color: #6366F1; /* indigo-500 */
+}
+
+/* Feedback styles for checkboxes */
+.checkbox-label.correct {
+    background-color: #10B981; /* Emerald-500 */
+    border-color: #059669; /* Emerald-600 */
+}
+
+.checkbox-label.wrong {
+    background-color: #EF4444; /* Red-500 */
+    border-color: #DC2626; /* Red-600 */
+}
